@@ -3,3 +3,7 @@ function noSpace(x){
     return x.replace(/ /g, '')
 }
 noSpace("I ' m ");
+
+function noSpace(x){
+    return x.replace(/\s/g, '');
+  }
