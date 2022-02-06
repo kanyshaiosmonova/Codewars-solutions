@@ -19,3 +19,8 @@ odd ones are 1, 3, 5, 7, so the second group is 'oeas'
 And the final string to return is 'Cdwr oeas'
 
  */
+const sortMyString = s => {
+    let even = s.split('').filter((v, i) => i % 2 === 0).join('')
+    let odd = s.split('').filter((v, i) => i % 2 !== 0).join('')
+    return even + ' ' + odd
+}
