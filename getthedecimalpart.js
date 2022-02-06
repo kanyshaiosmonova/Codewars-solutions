@@ -10,3 +10,7 @@ function getDecimal(n){
     let num=n.toString().split('.')[1]
     return  num===undefined ? 0 : ('0'+'.'+num)*1
   }
+
+function getDecimal(n){
+    return Math.abs(n%1);
+  }
